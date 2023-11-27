@@ -15,9 +15,7 @@ const RootLayout: NextPage<PropsWithChildren> = ({ children }) => {
                 <div className='flex flex-col min-h-screen bg-gradient-to-r from-slate-600 to-slate-100'>
                     <div className='flex flex-col flex-grow w-full mx-auto max-w-7xl'>
                         <Hero />
-                        <main className=''>
-                            {children}
-                        </main>  
+                        {children}
                     </div>
                     <Footer />
                 </div>            
