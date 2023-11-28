@@ -20,7 +20,7 @@ const AnimCard: FC<Props> = ({ anim, idx }) => {
             </div>
             <div className='flex flex-col gap-1.5 px-3 py-2'>
                 <div className='flex items-center justify-between gap-1'>
-                    <p className='text-lg'>
+                    <p className='overflow-x-hidden text-lg whitespace-nowrap text-ellipsis'>
                         {anim.name}
                     </p>
                     <div className='text-white/80'>
