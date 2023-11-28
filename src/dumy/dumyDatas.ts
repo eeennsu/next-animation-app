@@ -1,4 +1,4 @@
-export const data = [
+const dumyDatas: Anim[] = [
     {
       id: "1",
       name: "bleach",
@@ -142,4 +142,6 @@ export const data = [
       episodes_aired: 114,
       score: "8.39",
     },
-  ];
+];
+
+export default dumyDatas
