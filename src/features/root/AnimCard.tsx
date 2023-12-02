@@ -8,11 +8,13 @@ type Props = {
 
 const AnimCard: FC<Props> = ({ anim, idx }) => {
 
+    const src = `https://shikimori.one${anim.image.original}`;
+
     return (
         <div className='relative flex flex-col max-w-sm rounded-lg shadow-lg hover:shadow-2xl'>
-            <div className='relative w-full h-[37vh]'>
+            <div className='relative w-full h-[56vh] md:h-[36vh]'>
                 <Image 
-                    src={anim.image.original}
+                    src={src}
                     alt={anim.name}
                     fill
                     className='rounded-t-lg rounded-b-sm'

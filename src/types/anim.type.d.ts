@@ -12,3 +12,8 @@ type Anim = {
 }
 
 type Order = 'id' | 'ranked' | 'kind' | 'popularity' | 'name' | 'aired_on' | 'episodes' | 'status' | 'random' | 'ranked_random' | 'ranked_shiki';
+
+type AnimStoreType = {
+    anims: Anim[];
+    setAnims: (anims: Anim[]) => void;
+}
