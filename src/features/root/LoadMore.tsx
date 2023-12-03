@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import { fetchAnim } from '@/actions/animAction';
-import AnimCard from './AnimCard';
+import AnimCard from '../anim/AnimCard';
 
 const LoadMore: FC = () => {
 
@@ -34,7 +34,7 @@ const LoadMore: FC = () => {
             <section className='grid grid-cols-1 gap-10 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2'>
                 {
                     anims.map((anim, i) => (
-                        <AnimCard key={anim.id} anim={anim} idx={i} />
+                        <AnimCard key={anim.id} anim={anim} index={i} />
                     ))
                 }
             </section>

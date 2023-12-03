@@ -1,4 +1,4 @@
-import AnimCard from '@/features/root/AnimCard';
+import AnimCard from '@/features/anim/AnimCard';
 import LoadMore from '@/features/root/LoadMore';
 import { NextPage } from 'next';
 import { fetchAnim } from '@/actions/animAction';
@@ -17,7 +17,7 @@ const Home: NextPage = async () => {
             <section className='grid grid-cols-1 gap-10 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2'>
                 {
                     anims.map((anim, i) => (
-                        <AnimCard key={anim.id} anim={anim} idx={i} />
+                        <AnimCard key={anim.id} anim={anim} index={i} />
                     ))
                 }
             </section>
